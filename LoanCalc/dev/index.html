@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Loan Calculator | Vanila JS</title>
+    <meta charset="utf-8">
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="page">
+    <form class="calc-form">
+      <div class="container">
+        <ul class="loader">
+          <li class="item" data-pct="80">
+            <svg class="circles" viewbox="0 0 110 110">
+              <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+              <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+            </svg>
+          </li>
+        </ul>
+        <h1>Loan Calculator</h1>
+        <div class="form-group"><i class="fas fa-dollar-sign"></i>
+          <input type="number" placeholder="Loan Amount" id="amount">
+        </div>
+        <div class="form-group"><i class="fas fa-percent"></i>
+          <input type="number" placeholder="Interest" id="interest">
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="Years To Repay" id="years">
+        </div>
+        <div class="buttons"><a class="btn" href="#" id="clearInputs">Clear</a><a class="btn" href="#" id="sendForm">Calculate</a></div>
+        <div class="results">
+          <h5>Results</h5>
+          <div class="form-group"><span>Montly Payment</span>
+            <input type="number" id="montly-payment" disabled>
+          </div>
+          <div class="form-group"><span>Total Payment</span>
+            <input type="number" id="total-payment" disabled>
+          </div>
+          <div class="form-group"><span>Total Interest</span>
+            <input type="number" id="total-interest" disabled>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="js/bundle.min.js"></script>
+  </body>
+</html>

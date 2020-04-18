@@ -1,0 +1,19 @@
+.navbar {
+	background: $blue;
+	padding: 20px 0;
+
+	@include phones {
+		text-align: center;
+	}
+}
+
+.logo {
+	font-size: 30px;
+	color: #fff;
+
+	.fa-github {
+		margin-left: 10px;
+	}
+
+
+}

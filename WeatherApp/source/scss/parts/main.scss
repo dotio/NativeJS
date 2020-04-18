@@ -1,0 +1,55 @@
+.dark {
+	margin: 10px 0;
+	color: #333;
+	font-size: 30px;
+	text-transform: capitalize
+}
+
+h1 {
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+.temp {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	h3 {
+		margin: 0;
+	}
+}
+
+.list-info {
+	background: $li;
+	color: #fff;
+	border-radius: 5px;
+	width: 100%;
+
+	li {
+		padding: 10px;
+		border-radius: 5px;
+
+		&:not(:last-child) {
+			border-bottom: 10px solid $primary-color;
+		}
+
+	}
+}
+
+.btn {
+	margin-top: 20px;
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;
+	background: darken($btn, 10%);
+	box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .3);
+	transition: all .55s ease;
+
+	&:hover,
+	&:focus {
+		background: darken($primary-color, 20%);
+		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+	}
+}

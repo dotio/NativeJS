@@ -1,0 +1,157 @@
+#profile {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.profile-info {
+	display: flex;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0;
+
+	@include phones {
+		flex-direction: column;
+	}
+}
+
+.profile-img {
+	display: flex;
+	flex-direction: column;
+}
+
+.img-wrap {
+	width: 200px;
+	height: 200px;
+
+	@include phones {
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.profile-content {
+	margin-left: 20px;
+
+	@include phones {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+}
+
+.profile-content__descr {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	@include phones {
+		flex-direction: column;
+		width: 100%;
+	}
+
+}
+
+.indicator {
+	color: #fff;
+	font-size: 13px;
+	padding: 2px 5px;
+	border-radius: 5px;
+
+	@include phones {
+		width: 100%;
+	}
+
+	&:not(:first-child) {
+		margin-left: 5px;
+
+		@include phones {
+			margin-left: 0;
+			margin-top: 10px;
+		}
+	}
+
+}
+
+.list-content {
+	border: 1px solid $border-color;
+	border-radius: 5px;
+}
+
+.list-content__item {
+	padding: 10px;
+	color: $gray;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $border-color;
+	}
+
+
+}
+
+.profile-repos {
+	margin-top: 20px;
+}
+
+
+
+.list-profile__item {
+	display: flex;
+	align-items: center;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	padding: 20px 50px 20px 20px;
+	margin-top: 10px;
+	width: 100%;
+	justify-content: space-between;
+
+	@include phones {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+}
+
+.profile-repos__content {
+	width: 58%;
+
+	@include phones {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.list-profile__link {
+	font-size: 15px;
+	color: $blue;
+}
+
+.blue {
+	background: $blue;
+}
+
+.green {
+	background: $green;
+}
+
+.gray {
+	background: $gray;
+}
+
+.yellow {
+	background: $yellow;
+}
+
+.alert {
+	background: rgb(226, 57, 57);
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+.searchCard {
+	margin-top: 20px;
+	border: 1px solid $border-color;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+h1 {
+	@include phones {
+		font-size: 30px;
+	}
+}
+
+.lead {
+	color: $gray;
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+.form-control {
+	padding: 10px;
+	width: 50%;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	outline-color: $blue;
+	font-size: 14px;
+
+	@include phones {
+		width: 100%;
+	}
+}

@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'SegoeUI';
+	src:	url('../SegoeUI/SegoeUI.eot') format('eot'),
+				url('../SegoeUI/SegoeUI.ttf') format('truetype'),
+				url('../SegoeUI/SegoeUI.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SegoeUI';
+	src:	url('../SegoeUI/SegoeUI-Bold.eot') format('eot'),
+				url('../SegoeUI/SegoeUI-Bold.ttf') format('truetype'),
+				url('../SegoeUI/SegoeUI-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}

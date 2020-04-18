@@ -1,0 +1,96 @@
+.main-section {
+	width: 100%;
+}
+
+.task-title {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+form {
+	width: 100%;
+	text-align: left;
+}
+
+
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 100%;
+
+	label {
+		font-size: 13px;
+	}
+}
+
+.addTaskAlert {
+	background: $secondary-color;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-radius: 5px;
+	color: #fff;
+	visibility: hidden;
+	transition: visibility .55s ease;
+}
+
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 50px;
+	position: relative;
+}
+
+.task {
+	outline: none;
+	border: none;
+	border-color: transparent;
+	border-bottom: 2px solid $primary-color;
+	background: none;
+	background: transparent;
+	border-radius: 0;
+	width: 100%;
+	color: $primary-color;
+	font-size: 15px;
+	transition: all .55s ease;
+	padding: 5px 10px;
+
+	&:focus {
+		padding-bottom: 10px;
+		border-bottom: 2px solid $secondary-color;
+	}
+}
+
+.collection {
+	width: 100%;
+
+	li {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 0;
+		border-bottom: 1px dotted $primary-color;
+		color: $secondary-color;
+	}
+
+	.fas {
+		color: orange;
+		transition: all .55s ease;
+		cursor: pointer;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+}

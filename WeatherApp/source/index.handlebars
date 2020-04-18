@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 ">
+	<title>{{htmlWebpackPlugin.options.title}}</title>
+	<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="overlay"></div>
+		{{> components/modal/modal}}
+		<h1 id="w-location"></h1>
+		<h3 id="w-descr" class="dark"></h3>
+		<div class="temp">
+			<img id="w-icon" class="weather-icon">
+			<h3 id="w-tempString"></h3>
+		</div>
+
+
+		<ul class="list-info" id="w-details">
+			<li id="w-cloudiness"></li>
+			<li id="w-humidity"></li>
+			<li id="w-pressure"></li>
+			<li id="w-temp-max"></li>
+			<li id="w-temp-min"></li>
+			<li id="w-wind"></li>
+		</ul>
+		<a href="#modal" class="btn" id="changeLoc">Change Location</a>
+	</div>
+</body>
+
+</html>

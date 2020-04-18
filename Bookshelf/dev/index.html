@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Bookshelf | Add your book</title>
+    <meta charset="utf-8">
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="page">
+    <div class="book">
+      <div class="container">
+        <h1><span class="a">A</span><span class="d">d</span><span class="d2">d</span><span>  </span><span class="b">B</span><span class="o">o</span><span class="o2">o</span><span class="k">k</span></h1>
+        <div class="form-group">
+          <label for="title">Book Title</label>
+          <input type="text" id="title">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author">
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input type="text" id="isbn">
+        </div><a class="btn" href="#" id="submitBtn">submit</a>
+        <div class="result">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/bundle.min.js"></script>
+  </body>
+</html>

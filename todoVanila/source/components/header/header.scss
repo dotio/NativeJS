@@ -1,0 +1,35 @@
+.header {
+	text-align: center;
+
+	.white-text {
+		color: $primary-color;
+		position: relative;
+		top: -500px;
+		animation: fromTop 5s forwards ease;
+	}
+
+	.lead {
+		padding-top: 20px;
+		font-size: 18px;
+		color: #fff;
+		animation: on 5s forwards 3s ease;
+	}
+}
+
+@keyframes fromTop {
+	50% {
+		top: 30px;
+	}
+
+	100% {
+		top: 0;
+		color: $secondary-color;
+		text-shadow: 5px 5px 10px $primary-color;
+	}
+}
+
+@keyframes on {
+	100% {
+		color: $primary-color
+	}
+}

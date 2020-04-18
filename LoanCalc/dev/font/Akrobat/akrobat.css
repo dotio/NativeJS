@@ -1,0 +1,24 @@
+
+@font-face {
+	font-family: 'Akrobat';
+	src: url('Akrobat-Regular.eot');
+	src: local('Akrobat Regular'), local('Akrobat-Regular'),
+		url('Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Akrobat-Regular.woff') format('woff'),
+		url('Akrobat-Regular.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Akrobat';
+	src: url('Akrobat-Black.eot');
+	src: local('Akrobat Black'), local('Akrobat-Black'),
+		url('Akrobat-Black.eot?#iefix') format('embedded-opentype'),
+		url('Akrobat-Black.woff') format('woff'),
+		url('Akrobat-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
